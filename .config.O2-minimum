@@ -4539,6 +4539,19 @@ CONFIG_POSTFIX_PCRE=y
 # CONFIG_PACKAGE_youtube-dl-src is not set
 
 #
+# NetPing
+#
+
+#
+# Base
+#
+CONFIG_PACKAGE_dkso_64=y
+CONFIG_PACKAGE_owrt-plib-ubus=y
+CONFIG_PACKAGE_owrt_email=y
+CONFIG_PACKAGE_owrt_log=y
+CONFIG_PACKAGE_owrt_plib_lark_parser=y
+
+#
 # Network
 #
 

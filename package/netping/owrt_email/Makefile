@@ -17,8 +17,8 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/owrt_email
   SECTION:=netping
-  CATEGORY:=Base
-  SUBMENU:=Utils and boot scripts
+  CATEGORY:=NetPing
+  SUBMENU:=Base
   TITLE:=module for sending email notifications
   URL:=https://github.com/Netping/OWRT_Email
   MAINTAINER:=Leonid Khlebushchev <info@netping.ru>
@@ -33,7 +33,7 @@ CONF_FILE:=smtpconf
 CONF_DIR:=/etc/config/
 
 MODULE_FILES:=smtpmail.py
-MODULE_FILES_DIR:=/usr/lib/python3.7/site-packages/
+MODULE_FILES_DIR:=/usr/lib/python3.6/site-packages/
 
 ETC_FILES:=Configname
 ETC_FILES_DIR:=/etc/netping_email/

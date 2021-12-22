@@ -30,29 +30,29 @@ define Package/owrt_plib_lark_parser/description
 endef
 
 define Package/owrt_plib_lark_parser/install
-	mkdir -p $(1)/usr/lib/python3.7/site-packages/lark
-	mkdir -p $(1)/usr/lib/python3.7/site-packages/lark-stubs
-	mkdir -p $(1)/usr/lib/python3.7/site-packages/lark_parser-0.11.3-py3.7.egg-info
-	$(INSTALL_DIR) $(1)/usr/lib/python3.7/site-packages/lark
-	cp -r $(PKG_BUILD_DIR)/lark/* $(1)/usr/lib/python3.7/site-packages/lark
-	$(INSTALL_DIR) $(1)/usr/lib/python3.7/site-packages/lark-stubs
-	cp -r  $(PKG_BUILD_DIR)/lark-stubs/* $(1)/usr/lib/python3.7/site-packages/lark-stubs
-	$(INSTALL_DIR) $(1)/usr/lib/python3.7/site-packages/lark_parser-0.11.3-py3.7.egg-info
-	cp -r  $(PKG_BUILD_DIR)/lark_parser-0.11.3-py3.7.egg-info/* $(1)/usr/lib/python3.7/site-packages/lark_parser-0.11.3-py3.7.egg-info
+	mkdir -p $(1)/usr/lib/python3.6/site-packages/lark
+	mkdir -p $(1)/usr/lib/python3.6/site-packages/lark-stubs
+	mkdir -p $(1)/usr/lib/python3.6/site-packages/lark_parser-0.11.3-py3.6.egg-info
+	$(INSTALL_DIR) $(1)/usr/lib/python3.6/site-packages/lark
+	cp -r $(PKG_BUILD_DIR)/lark/* $(1)/usr/lib/python3.6/site-packages/lark
+	$(INSTALL_DIR) $(1)/usr/lib/python3.6/site-packages/lark-stubs
+	cp -r  $(PKG_BUILD_DIR)/lark-stubs/* $(1)/usr/lib/python3.6/site-packages/lark-stubs
+	$(INSTALL_DIR) $(1)/usr/lib/python3.6/site-packages/lark_parser-0.11.3-py3.6.egg-info
+	cp -r  $(PKG_BUILD_DIR)/lark_parser-0.11.3-py3.7.egg-info/* $(1)/usr/lib/python3.6/site-packages/lark_parser-0.11.3-py3.6.egg-info
 
-	mkdir -p $(1)/usr/lib/python3.7/site-packages/pyjsparser
-	mkdir -p $(1)/usr/lib/python3.7/site-packages/pyjsparser-2.7.1.dist-info
-	$(INSTALL_DIR) $(1)/usr/lib/python3.7/site-packages/pyjsparser
-	cp -r $(PKG_BUILD_DIR)/pyjsparser/* $(1)/usr/lib/python3.7/site-packages/pyjsparser
-	$(INSTALL_DIR) $(1)/usr/lib/python3.7/site-packages/pyjsparser-2.7.1.dist-info
-	cp -r  $(PKG_BUILD_DIR)/pyjsparser-2.7.1.dist-info/* $(1)/usr/lib/python3.7/site-packages/pyjsparser-2.7.1.dist-info
+	mkdir -p $(1)/usr/lib/python3.6/site-packages/pyjsparser
+	mkdir -p $(1)/usr/lib/python3.6/site-packages/pyjsparser-2.7.1.dist-info
+	$(INSTALL_DIR) $(1)/usr/lib/python3.6/site-packages/pyjsparser
+	cp -r $(PKG_BUILD_DIR)/pyjsparser/* $(1)/usr/lib/python3.6/site-packages/pyjsparser
+	$(INSTALL_DIR) $(1)/usr/lib/python3.6/site-packages/pyjsparser-2.7.1.dist-info
+	cp -r  $(PKG_BUILD_DIR)/pyjsparser-2.7.1.dist-info/* $(1)/usr/lib/python3.6/site-packages/pyjsparser-2.7.1.dist-info
 
-	mkdir -p $(1)/usr/lib/python3.7/site-packages
-	mkdir -p $(1)/usr/lib/python3.7/site-packages/six-1.16.0.dist-info
-	$(INSTALL_DIR) $(1)/usr/lib/python3.7/site-packages
-	cp -r $(PKG_BUILD_DIR)/six.py $(1)/usr/lib/python3.7/site-packages
-	$(INSTALL_DIR) $(1)/usr/lib/python3.7/site-packages/six-1.16.0.dist-info
-	cp -r  $(PKG_BUILD_DIR)/six-1.16.0.dist-info/* $(1)/usr/lib/python3.7/site-packages/six-1.16.0.dist-info
+	mkdir -p $(1)/usr/lib/python3.6/site-packages
+	mkdir -p $(1)/usr/lib/python3.6/site-packages/six-1.16.0.dist-info
+	$(INSTALL_DIR) $(1)/usr/lib/python3.6/site-packages
+	cp -r $(PKG_BUILD_DIR)/six.py $(1)/usr/lib/python3.6/site-packages
+	$(INSTALL_DIR) $(1)/usr/lib/python3.6/site-packages/six-1.16.0.dist-info
+	cp -r  $(PKG_BUILD_DIR)/six-1.16.0.dist-info/* $(1)/usr/lib/python3.6/site-packages/six-1.16.0.dist-info
 endef
 
 $(eval $(call BuildPackage,owrt_plib_lark_parser))

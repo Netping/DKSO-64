@@ -30,7 +30,7 @@ define Package/owrt_log/description
 endef
 
 MODULE_FILE:=journal.py
-MODULE_FILES_DIR:=/usr/lib/python3.7/site-packages/
+MODULE_FILES_DIR:=/usr/lib/python3.6/site-packages/
 
 ETC_FILE1:=system_hash
 ETC_FILE2:=journal_hash
